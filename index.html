@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -19,60 +20,64 @@
                 Some fields are missing
             </div>
 
-            <div class="row">
-                <div class="col-5">
-                    <label for="Card">Card #</label>
-                    <input type="password" name="name" id="Card" placeholder="XXXXXXXXXXX">
+            <div class="row mb-3">
+                <div class="col-5 px-4">
+                    <label for="Card"><b>Card #</b></label>
+                    <input type="password" class="form-control" name="name" id="Card" placeholder="XXXXXXXXXXX">
                 </div>
                 <div class="col-3">
-                    <label for="CVC">CVC</label>
-                    <input type="password" name="name" id="CVC" placeholder="0000">
+                    <label for="CVC"><b>CVC</b></label>
+                    <input type="password" class="form-control" name="name" id="CVC" placeholder="0000">
+                </div>
+                <div class="col-4 px-4">
+                    <label for="Amount"><b>Amount</b></label>
+                    <input type="number" class="form-control" name="name" id="Amount" placeholder="Amount">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-6 px-4">
+                    <label for="First"><b>First Name</b></label>
+                    <input type="text" class="form-control" name="name" id="First">
+                </div>
+                <div class="col-6 px-4">
+                    <label for="Last"><b>Last Name</b></label>
+                    <input type="text" class="form-control" name="name" id="Last">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-6 px-4">
+                    <label for="City"><b>City</b></label>
+                    <input type="text" class="form-control" name="name" id="City">
                 </div>
                 <div class="col-3">
-                    <label for="Amount">Amount</label>
-                    <input type="number" name="name" id="Amount" placeholder="Amount">
+                    <label for="State"><b>State</b></label>
+                    <input type="text" class="form-control" name="name" id="State" placeholder="Pick a state">
+                </div>
+                <div class="col-3 px-4">
+                    <label for="Postal"><b>Postal Code</b></label>
+                    <input type="text" class="form-control" name="name" id="Postal">
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6">
-                    <label for="First">First Name</label>
-                    <input type="text" name="name" id="First">
+            <div class="row mb-3">
+                <div class="col-6 px-4">
+                    <label for="Master Card"><b>We accept</b>:</label>
+                    <input type="radio" name="envio" id="Master Card"><i class="bi bi-credit-card-fill"></i>
+                    <input type="radio" name="envio" id="Visa"><i class="bi bi-credit-card-fill"></i>
+                    <input type="radio" name="envio" id="radio"><i class="bi bi-credit-card-fill"></i>
+                    <input type="radio" name="envio" id="American Express"><i class="bi bi-credit-card-fill"></i>
                 </div>
-                <div class="col-6">
-                    <label for="Last">Last Name</label>
-                    <input type="text" name="name" id="Last">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label for="City">City</label>
-                    <input type="text" name="name" id="City">
-                </div>
-                <div class="col-4">
-                    <label for="State">State</label>
-                    <input type="text" name="name" id="State" placeholder="Pick a state">
-                </div>
-                <div class="col-4">
-                    <label for="Postal">Postal Code</label>
-                    <input type="text" name="name" id="Postal">
+                <div class="col-6 px-4">
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label"><b>Message:</b></label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        <p>Add any notes here.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6">
-                    <label for="Master Card">We accept:</label>
-                    <input type="radio" name="envio" id="Master Card">
-                    <input type="radio" name="envio" id="Visa">
-                    <input type="radio" name="envio" id="radio">
-                    <input type="radio" name="envio" id="American Express">
-                </div>
-                <div class="col-6">
-                    <input type="text">
-                </div>
-            </div>
-           
             <div class="border-top border-secondary bg-light d-flex justify-content-end py-3">
                 <input type="reset" value="Cancel" class="btn btn-secondary me-1">
                 <input type="submit" value="Submit" class="btn btn-primary me-3">
