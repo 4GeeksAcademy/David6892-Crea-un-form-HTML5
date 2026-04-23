@@ -23,10 +23,10 @@
             <div class="row mb-3">
                 <div class="col-5 px-4">
                     <label for="Card"><b>Card #</b></label>
-                    <input type="password" class="form-control" name="name" id="Card" placeholder="XXXXXXXXXXX">
+                    <input type="password" class="form-control" name="name" id="Card" placeholder="XXXXXXXXXXXXXXXX">
                 </div>
                 <div class="col-3">
-                    <label for="CVC"><b>CVC</b></label>
+                    <label for="CVC"><b>CVC #</b></label>
                     <input type="password" class="form-control" name="name" id="CVC" placeholder="0000">
                 </div>
                 <div class="col-4 px-4">
@@ -51,9 +51,14 @@
                     <label for="City"><b>City</b></label>
                     <input type="text" class="form-control" name="name" id="City">
                 </div>
-                <div class="col-3">
+                <div class="col-3 ps-4">
                     <label for="State"><b>State</b></label>
-                    <input type="text" class="form-control" name="name" id="State" placeholder="Pick a state">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pick a state</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
                 <div class="col-3 px-4">
                     <label for="Postal"><b>Postal Code</b></label>
@@ -64,14 +69,16 @@
             <div class="row mb-3">
                 <div class="col-6 px-4">
                     <label for="Master Card"><b>We accept</b>:</label>
-                    <input type="radio" name="envio" id="Master Card"><i class="bi bi-credit-card-fill"></i>
-                    <input type="radio" name="envio" id="Visa"><i class="bi bi-credit-card-fill"></i>
-                    <input type="radio" name="envio" id="radio"><i class="bi bi-credit-card-fill"></i>
-                    <input type="radio" name="envio" id="American Express"><i class="bi bi-credit-card-fill"></i>
+                    <div class="alert alert-dark width 50%" role="alert">
+                        <input class="me-1" type="radio" name="envio" id="Master Card"><i class="bi bi-credit-card-fill me-3"></i>
+                        <input class="me-1" type="radio" name="envio" id="Visa"><i class="bi bi-credit-card-fill me-3"></i>
+                        <input class="me-1" type="radio" name="envio" id="radio"><i class="bi bi-credit-card-fill me-3"></i>
+                        <input class="me-1" type="radio" name="envio" id="American Express"><i class="bi bi-credit-card-fill me-3"></i>
+                    </div>
                 </div>
                 <div class="col-6 px-4">
                     <div class="mb-3">
-                        <label for="message-text" class="col-form-label"><b>Message:</b></label>
+                        <label for="message-text" class="col-form-label"><b>Message</b></label>
                         <textarea class="form-control" id="message-text"></textarea>
                         <p>Add any notes here.</p>
                     </div>
